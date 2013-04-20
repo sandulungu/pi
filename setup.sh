@@ -11,7 +11,9 @@ sudo modprobe snd_bcm2835
 sudo amixer cset numid=3 1
 
 # Install Raspberry DJ ===============================================================================
-sudo apt-get install node-js
+sudo apt-get install git node-js
+git clone https://github.com/z7/pi.git
+cd pi
 
 # Run when ready to rock'n'roll
 node server.js
