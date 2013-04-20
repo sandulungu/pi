@@ -1,5 +1,14 @@
-Jukebox
+Jukebox Pi
 ==
+
+Show-off
+-
+
+Transform your Raspberry Pi into a cool Raspberry DJ.
+
+
+Instructions
+-
 
 You'll need an application on FB for the authentication of Jukebox visitors.
 Be sure to activate "Website login with FaceBook" and set the URL (host and port) exacly as you'll configure it later.
