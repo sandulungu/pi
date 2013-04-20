@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Raspberry DJ</title>
+    <link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+    <div class="container">
+
+        <div class="masthead">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a>Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <h3 class="muted">Raspberry DJ</h3>
+        </div>
+
+        <hr>
+
+        <h1>Playlist</h1>
+        <div id="playlist">
+            <script type="template">
+                <tr class="dynamic-item <%= now_playing ? 'alert-success' : '' %>">
+                    <td><%= id + 1 %></td>
+                    <td><%= name %></td>
+                    <td><%= queue %></td>
+                    <td><a data-id="<%= id %>" href="#" class="queue btn">Queue</a></td>
+                </tr>
+            </script>
+            <table class="table table-bordered table-hover">
+                <thead><th></th><th>Song name</th><th>Queue positions</th><th></th></thead>
+                <tbody class="dynamic-container"></tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <div class="footer">
+            <p>&copy; Sandu Lungu 2013</p>
+        </div>
+
+    </div>
+
+    <script data-main="app.js" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js"></script>
+</body>
+</html>

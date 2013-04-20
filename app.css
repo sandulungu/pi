@@ -1,0 +1,10 @@
+@import "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css";
+
+body {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+hr {
+    margin: 30px 0;
+}
