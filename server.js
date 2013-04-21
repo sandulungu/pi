@@ -65,9 +65,9 @@ function next_song() {
     var next = queue.shift();
     if (next == null)
         next = Math.floor(Math.random() * songs.length);
-    curr_song = songs[next];
-    log("Next song: " + curr_song);
-    return curr_song;
+    curr_song = next;
+    log("Next song: " + songs[next]);
+    return songs[next];
 }
 
 function loop() {
@@ -104,13 +104,21 @@ function handler(req, res) {
         return;
     }
 
-    else if (uri == '/queue') {
+    else if (uri == '/stop') {
+        res.writeHead(200);
+        queue = [];
+        first_song = true;
+        exec("killall mpg123");
+        return res.end(get_playlist());
+    }
+
+    else if (uri == '/queue' || uri == '/play') {
         res.writeHead(200);
         if (!songs[q]) {
             res.writeHead(500);
             return res.end('Invalid song id: ' + q);
         }
-        queue.push(q);
+        uri == '/play' ? queue.unshift(q) : queue.push(q);
 
         if (first_song) {
             first_song = false;

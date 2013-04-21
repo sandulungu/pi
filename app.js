@@ -42,13 +42,18 @@ define(['jquery', 'bootstrap', 'underscore'], function() {
         refresh();
         setTimeout(refresh, 10 * 1000);
 
-        $('#playlist').delegate('.queue', 'click', function() {
+        $('#playlist').delegate('.queue ,.play', 'click', function() {
             var $btn = $(this),
-                id = $btn.data('id');
+                id = $btn.data('id'),
+                action = $btn.hasClass('play') ? 'play' : 'queue';
 
-            $.getJSON('http://10.10.0.45:8888/queue?' + id, render);
+            $.getJSON('http://10.10.0.45:8888/' + action + '?' + id, render);
 
             return false;
+        });
+
+        $('#stop-playback').click(function() {
+            $.getJSON('http://10.10.0.45:8888/stop', render);
         });
 
     });

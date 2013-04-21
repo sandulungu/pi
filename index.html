@@ -24,11 +24,19 @@
                     <td><%= id + 1 %></td>
                     <td><%= name %></td>
                     <td><%= queue %></td>
-                    <td><a data-id="<%= id %>" href="#" class="queue btn">Queue</a></td>
+                    <td>
+                        <a data-id="<%= id %>" href="#" class="play btn">Play</a>
+                        <% if(now_playing != null) { %><a data-id="<%= id %>" href="#" class="queue btn">Queue</a><% } %>
+                    </td>
                 </tr>
             </script>
             <table class="table table-bordered table-hover">
-                <thead><th></th><th>Song name</th><th>Queue positions</th><th></th></thead>
+                <thead>
+                    <th></th>
+                    <th>Song name</th>
+                    <th>Queue positions</th>
+                    <th><a id="stop-playback" data-id="<%= id %>" href="#" class="btn btn-danger">Stop</a></th>
+                </thead>
                 <tbody class="dynamic-container"></tbody>
             </table>
         </div>
