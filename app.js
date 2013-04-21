@@ -46,7 +46,7 @@ define(['jquery', 'bootstrap', 'underscore'], function() {
             var $btn = $(this),
                 id = $btn.data('id');
 
-            $.getJSON('http://10.10.0.45:8888/queue/' + id, render);
+            $.getJSON('http://10.10.0.45:8888/queue?' + id, render);
 
             return false;
         });

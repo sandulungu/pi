@@ -16,7 +16,7 @@ git clone https://github.com/z7/pi.git
 cd pi
 
 # Run when ready to rock'n'roll
-node server.js
+nodejs server.js
 
 # Install Jukebox ====================================================================================
 sudo apt-get install python-virtualenv libshout3 libshout3-dev pkg-config python-dev

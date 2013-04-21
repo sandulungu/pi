@@ -86,7 +86,9 @@ function handler(req, res) {
         q = parsed.query;
 
     log("Requested " + uri);
-    if (uri == '/' || uri == '/app.js') {
+    if (uri == '/' || uri == '/app.js' || uri == '/app.css') {
+        if (uri == '/') uri = '/index.html';
+
         fs.readFile(
             __dirname + uri,
             function (err, data) {
