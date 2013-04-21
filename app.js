@@ -16,6 +16,8 @@ define(['jquery', 'bootstrap', 'underscore'], function() {
     $(function() {
 
         function render(data) {
+            $('#stop-playback').toggle(data.now_playing != null);
+
             var queue = {};
             _.each(data.queue, function(id, no) {
                 queue[id] = queue[id] || [];
