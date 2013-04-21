@@ -98,7 +98,7 @@ function handler(req, res) {
         q = parsed.query;
 
     log("Requested " + uri);
-    if (uri == '/' || uri == '/app.js' || uri == '/app.css') {
+    if (uri == '/' || uri == '/about.html' || uri == '/app.js' || uri == '/app.css') {
         if (uri == '/') uri = '/index.html';
 
         fs.readFile(
