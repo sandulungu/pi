@@ -62,7 +62,7 @@ walk(folder, function (err, files) {
 
 var curr_song,
     queue = [],
-    first_song = true, playing = false;
+    stopped = true, playing = false;
 
 function get_next_song() {
     var next = queue.shift();
@@ -74,17 +74,17 @@ function get_next_song() {
 }
 
 function play_next() {
-    if (first_song || playing) return;
+    if (stopped || playing) return;
     playing = true;
     exec("mpg123 " + get_next_song().replace(/ /g, '\\ '), function() {
-        curr_song = null;
         playing = false;
         setTimeout(play_next, 1000); // sleep for 1 second to prevent wasting resources in case of looping
     });
 }
 
 function stop_playback() {
-    first_song = true;
+    curr_song = null;
+    stopped = true;
     exec("killall mpg123");
 }
 
@@ -132,8 +132,8 @@ function handler(req, res) {
 
         queue.push(q);
 
-        if (first_song) {
-            first_song = false;
+        if (stopped) {
+            stopped = false;
             play_next();
         }
         return res.end(get_playlist());

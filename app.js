@@ -41,7 +41,7 @@ define(['jquery', 'bootstrap', 'underscore'], function() {
         }
 
         refresh();
-        setTimeout(refresh, 10 * 1000);
+        setInterval(refresh, 10 * 1000);
 
         $('#playlist').delegate('.queue ,.play', 'click', function() {
             var $btn = $(this),
@@ -55,6 +55,7 @@ define(['jquery', 'bootstrap', 'underscore'], function() {
 
         $('#stop-playback').click(function() {
             $.getJSON('http://10.10.0.45:8888/stop', render);
+            return false;
         });
 
     });
