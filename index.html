@@ -24,9 +24,8 @@
                     <td><%= id + 1 %></td>
                     <td><%= name %></td>
                     <td><%= queue %></td>
-                    <td>
-                        <a data-id="<%= id %>" href="#" class="play btn">Play</a>
-                        <% if(now_playing != null) { %><a data-id="<%= id %>" href="#" class="queue btn">Queue</a><% } %>
+                    <td><a data-id="<%= id %>" href="#" class="play btn">Play</a></td>
+                    <td><% if (!stopped) { %><a data-id="<%= id %>" href="#" class="queue btn">Queue</a><% } %></td>
                     </td>
                 </tr>
             </script>
@@ -36,6 +35,7 @@
                     <th>Song name</th>
                     <th>Queue positions</th>
                     <th><a id="stop-playback" data-id="<%= id %>" href="#" class="btn btn-danger">Stop</a></th>
+                    <th></th>
                 </thead>
                 <tbody class="dynamic-container"></tbody>
             </table>

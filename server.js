@@ -60,8 +60,11 @@ walk(folder, function (err, files) {
     log(songs.length + " songs found.");
 });
 
-var curr_song, queue = [];
-function next_song() {
+var curr_song,
+    queue = [],
+    first_song = true;
+
+function get_next_song() {
     var next = queue.shift();
     if (next == null)
         next = Math.floor(Math.random() * songs.length);
@@ -70,11 +73,14 @@ function next_song() {
     return songs[next];
 }
 
-function loop() {
-    exec("mpg123 " + next_song().replace(/ /g, '\\ '), loop);
+function play_next() {
+    if (first_song) return;
+    exec("mpg123 " + get_next_song().replace(/ /g, '\\ '), play_next);
 }
 
-var first_song = true;
+function stop_playback() {
+    exec("killall mpg123");
+}
 
 function get_playlist() {
     return JSON.stringify({songs: songs, queue: queue, now_playing: curr_song});
@@ -108,7 +114,7 @@ function handler(req, res) {
         res.writeHead(200);
         queue = [];
         first_song = true;
-        exec("killall mpg123");
+        stop_playback();
         return res.end(get_playlist());
     }
 
@@ -118,12 +124,15 @@ function handler(req, res) {
             res.writeHead(500);
             return res.end('Invalid song id: ' + q);
         }
-        uri == '/play' ? queue.unshift(q) : queue.push(q);
-
-        if (first_song) {
-            first_song = false;
-            loop();
+        if (uri == '/play') {
+            queue.unshift(q);
+            stop_playback();
+        } else {
+            queue.push(q);
         }
+
+        first_song = false;
+        play_next();
         return res.end(get_playlist());
     }
 

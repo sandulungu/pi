@@ -30,6 +30,7 @@ define(['jquery', 'bootstrap', 'underscore'], function() {
                     id: id,
                     name: name,
                     queue: queue[id] ? queue[id].join(', ') : '',
+                    stopped: data.now_playing == null,
                     now_playing: data.now_playing == id
                 }));
             });
