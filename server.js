@@ -137,8 +137,10 @@ function handler(req, res) {
             queue.push(q);
         }
 
-        first_song = false;
-        play_next();
+        if (first_song) {
+            first_song = false;
+            play_next();
+        }
         return res.end(get_playlist());
     }
 
