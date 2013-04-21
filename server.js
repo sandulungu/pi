@@ -75,7 +75,9 @@ function get_next_song() {
 
 function play_next() {
     if (first_song) return;
-    exec("mpg123 " + get_next_song().replace(/ /g, '\\ '), play_next);
+    exec("mpg123 " + get_next_song().replace(/ /g, '\\ '), function() {
+        setTimeout(play_next, 1000); // sleep for 1 second to prevent any dead-loops
+    });
 }
 
 function stop_playback() {
@@ -124,9 +126,13 @@ function handler(req, res) {
             res.writeHead(500);
             return res.end('Invalid song id: ' + q);
         }
+
         if (uri == '/play') {
             queue.unshift(q);
-            stop_playback();
+            if (!first_song) {
+                stop_playback();
+                return res.end(get_playlist());
+            }
         } else {
             queue.push(q);
         }
