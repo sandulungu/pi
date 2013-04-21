@@ -60,5 +60,19 @@ define(['jquery', 'bootstrap', 'underscore'], function() {
             return false;
         });
 
+        // Volume control
+        var $volume_control = $('#volume-group');
+        for (var i = 76; i <= 100; i += 4) {
+            $volume_control.append($('<div>', {
+                class: 'btn',
+                title: 'Set volume to ' + i + '%'
+            }).html(i));
+        }
+        $volume_control.find('.btn').click(function() {
+            var $btn = $(this);
+            $.getJSON('http://10.10.0.45:8888/volume?' + $btn.text(), render);
+        });
+
+
     });
 });

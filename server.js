@@ -88,6 +88,10 @@ function stop_playback() {
     exec("killall mpg123");
 }
 
+function set_volume(percent) {
+    exec("amixer cset numid=1 " + percent + "%");
+}
+
 function get_playlist() {
     return JSON.stringify({songs: songs, queue: queue, now_playing: curr_song});
 }
@@ -142,6 +146,16 @@ function handler(req, res) {
     else if (uri == '/playlist') {
         res.writeHead(200);
         return res.end(get_playlist());
+    }
+
+    else if (uri == '/volume') {
+        var volume = parseInt(q);
+        if (volume < 0 || volume > 100) {
+            res.writeHead(500);
+            return res.end('Invalid volume (0-100): ' + volume);
+        }
+        set_volume(volume);
+        return res.end();
     }
 
     res.writeHead(404);
