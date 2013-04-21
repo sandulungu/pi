@@ -101,6 +101,7 @@ function handler(req, res) {
                 return res.end(data);
             }
         );
+        return;
     }
 
     else if (uri == '/queue') {
