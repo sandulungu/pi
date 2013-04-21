@@ -10,7 +10,7 @@ requirejs.config({
 });
 
 /**
- * Raspberry DJ client
+ * Jukebox Pi client
  */
 define(['jquery', 'bootstrap', 'underscore'], function() {
     $(function() {

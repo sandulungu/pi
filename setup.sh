@@ -10,7 +10,7 @@ vncserver -geometry 1360x700 :1
 sudo modprobe snd_bcm2835
 sudo amixer cset numid=3 1
 
-# Install Raspberry DJ ===============================================================================
+# Install Jukebox Pi ===============================================================================
 sudo apt-get install git node-js
 git clone https://github.com/z7/pi.git
 cd pi
@@ -18,7 +18,7 @@ cd pi
 # Run when ready to rock'n'roll
 nodejs server.js
 
-# Install Jukebox ====================================================================================
+# Install 3rd party Python Jukebox (slow on current Raspberry versions) ============================
 sudo apt-get install python-virtualenv libshout3 libshout3-dev pkg-config python-dev
 sudo pip install virtualenv
 virtualenv --no-site-packages jukebox

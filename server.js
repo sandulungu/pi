@@ -1,5 +1,5 @@
 /**
- * Raspberry DJ server
+ * Jukebox Pi server
  */
 
 /**

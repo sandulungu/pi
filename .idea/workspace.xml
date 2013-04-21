@@ -4,15 +4,15 @@
     <list default="true" id="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" name="Default" comment="" />
     <ignored path="dailyidea.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/next-steps.html" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365409715079" ignored="false" />
-    <file path="/tos.html" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365162204661" ignored="false" />
-    <file path="/privacy-policy.html" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365161612993" ignored="false" />
-    <file path="/app.css" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365091063274" ignored="false" />
-    <file path="/dummy.xml" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365091015314" ignored="false" />
-    <file path="/app.js" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365413503968" ignored="false" />
-    <file path="/vote.php" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365090586509" ignored="false" />
-    <file path="/index.html" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365409475565" ignored="false" />
     <file path="/submit-idea.php" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365089284053" ignored="false" />
+    <file path="/index.html" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365409475565" ignored="false" />
+    <file path="/vote.php" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365090586509" ignored="false" />
+    <file path="/app.js" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365413503968" ignored="false" />
+    <file path="/dummy.xml" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365091015314" ignored="false" />
+    <file path="/app.css" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365091063274" ignored="false" />
+    <file path="/privacy-policy.html" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365161612993" ignored="false" />
+    <file path="/tos.html" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365162204661" ignored="false" />
+    <file path="/next-steps.html" changelist="69ce9b7b-2a5f-4bb6-9524-df1a39f18507" time="1365409715079" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="58" selection-start="493" selection-end="493" vertical-scroll-proportion="-1.3076923">
+            <state line="14" column="30" selection-start="385" selection-end="385" vertical-scroll-proportion="-2.1052632">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.09357798">
               <folding />
             </state>
           </provider>
@@ -53,16 +62,16 @@
       <file leaf-file-name="about.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="34" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+            <state line="20" column="51" selection-start="496" selection-end="496" vertical-scroll-proportion="-8.038462">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="9" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.33333334">
+            <state line="1" column="3" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,7 +80,7 @@
       <file leaf-file-name="setup.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="488" selection-end="532" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +89,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="49" selection-start="2146" selection-end="2146" vertical-scroll-proportion="0.0">
+            <state line="12" column="3" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,12 +110,13 @@
         <option value="$PROJECT_DIR$/privacy-policy.html" />
         <option value="$PROJECT_DIR$/tos.html" />
         <option value="$PROJECT_DIR$/next-steps.html" />
-        <option value="$PROJECT_DIR$/setup.sh" />
         <option value="$PROJECT_DIR$/app.css" />
         <option value="$PROJECT_DIR$/about.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/setup.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -171,8 +181,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.editor" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -220,9 +230,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28560606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2901515" sideWeight="0.67066896" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -231,7 +242,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -349,13 +359,6 @@
         <state line="27" column="66" selection-start="921" selection-end="934" vertical-scroll-proportion="0.0327553" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="488" selection-end="532" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
@@ -363,35 +366,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="27" selection-end="81" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="34" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="58" selection-start="493" selection-end="493" vertical-scroll-proportion="-1.3076923">
+        <state line="20" column="51" selection-start="496" selection-end="496" vertical-scroll-proportion="-8.038462">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="49" selection-start="2146" selection-end="2146" vertical-scroll-proportion="0.0">
+        <state line="12" column="3" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="30" selection-start="385" selection-end="385" vertical-scroll-proportion="-2.1052632">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="9" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.33333334">
+        <state line="1" column="3" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.09357798">
           <folding />
         </state>
       </provider>

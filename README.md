@@ -1,10 +1,7 @@
 Jukebox Pi
 ==
 
-Show-off
--
-
-Transform your Raspberry Pi into a cool Raspberry DJ.
+Transform your Raspberry Pi into a cool Jukebox Pi.
 
 Instructions
 -
