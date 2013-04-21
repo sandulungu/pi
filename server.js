@@ -123,19 +123,14 @@ function handler(req, res) {
         return res.end(get_playlist());
     }
 
-    else if (uri == '/queue' || uri == '/play') {
+    else if (uri == '/queue') {
         res.writeHead(200);
         if (!songs[q]) {
             res.writeHead(500);
             return res.end('Invalid song id: ' + q);
         }
 
-        if (uri == '/play') {
-            queue.unshift(q);
-            stop_playback();
-        } else {
-            queue.push(q);
-        }
+        queue.push(q);
 
         if (first_song) {
             first_song = false;
